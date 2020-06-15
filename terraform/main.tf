@@ -2,6 +2,10 @@ variable "credentials-path" {}
 variable "project-name" {}
 variable "default-region" {}
 variable "suffix" {}
+variable "image-name" {}
+variable "file-dir" {
+    default = "files"
+}
 variable "cloud-run-service-account" {}
 variable "user" {}
 
