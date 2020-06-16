@@ -43,7 +43,6 @@ resource "google_cloud_run_service" "mlflow" {
     percent         = 100
     latest_revision = true
   }
-  depends_on = [google_endpoints_service.api_endpoint]
 }
 
 resource "google_cloud_run_service_iam_binding" "binding" {
